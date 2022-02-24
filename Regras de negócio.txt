@@ -1,0 +1,30 @@
+Gilded Rose é uma loja de vendas de 'itens'.
+Os itens são identificadospelos nomes.
+Cada item possui características unicas.
+
+- O campo SellIn representa o numero de dias que um item deve ser vendido
+- O campo Quality representa a valiosidade do item
+- O valor de Sellin é reduzido a cada dia que passa
+- O valor de Quality é aumentado ou diminuido diferentemente em cada item
+
+Regras de negócio
+Qualidades minimas e maximas do itens.
+Item	          Quality	Minimum	    Maximum
+common             -1         0           50
+Aged Brie          +1         0           50
+Conjured           -2         0           50
+Sulfuras            0         80          80
+Backstage passes  Condições   0           50
+
+Condições diferentes para Backstage passes 
+A Qualidade de "Backstage passes"
+- aumenta em +1 cada vez que o SellIn diminui
+- aumenta em +2 quando o valor SellIn é de 10 dias ou menos
+- aumenta em +3 quando o valor SellIn é de 5 dias ou menos
+- Cai para 0 após Sellin ser menor que 0
+
+
+
+
+
+        
